@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.one_1202154320_modul5.Tambah">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:text="Todo Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tNama"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="To Do"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tDeskripsi"
+        android:layout_alignBottom="@+id/tDeskripsi"
+        android:layout_alignEnd="@+id/tDeskripsi"
+        android:layout_alignRight="@+id/tDeskripsi"
+        android:text="Deskripsi"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tDeskripsi"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tNama"
+        android:layout_marginTop="17dp"
+        android:hint="Deskripsi To Do"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tPrioritas"
+        android:layout_alignBottom="@+id/tPrioritas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Priority"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tPrioritas"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tDeskripsi"
+        android:hint="Priority"
+        android:layout_marginTop="21dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:hint="Prioritas"
+        android:onClick="tambah"
+        android:text="Tambah Todo"
+        android:textColor="#fff" />
+</RelativeLayout>
